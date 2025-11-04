@@ -1,4 +1,6 @@
 {
+  "type": "module",
+  "name": "jmbsoftwaresolutions",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
