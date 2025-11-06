@@ -1,6 +1,5 @@
 
 import { AuthButton } from "@/components/auth/auth-button";
-import Headshot from "@/images/Headshot_small.png";
 import Image from 'next/image';
 export default function Home() {
   return (
