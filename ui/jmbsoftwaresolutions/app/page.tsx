@@ -31,7 +31,7 @@ export default function Home() {
               <div>
                 <Image
                   className="rounded-full border float-right display-block"
-                  src="/images/headshot_small.png" // Path to your image
+                  src="/images/headshot.png" // Path to your image
                   alt="Headshot" // Essential for accessibility and SEO
                   width={200} // Desired width
                   height={200} // Desired height
