@@ -1,58 +1,93 @@
-
 import { AuthButton } from "@/components/auth/auth-button";
-import Image from 'next/image';
+import Image from "next/image";
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center">
-      <div className="flex-1 w-full flex flex-col items-center">
-        <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
-          <div className="w-full flex justify-between items-center p-3 px-5 text-sm">
-            <div className="flex gap-5 items-center font-semibold text-lg md:text-4xl">
-              JMB Software Solutions
+    <main className="flex min-h-screen flex-col items-center p-4 mt-10">
+      <Image
+        className="rounded-full display-block"
+        src="/images/headshot.png"
+        alt="Headshot"
+        width={200}
+        height={200}
+      />
 
-            </div>
-            <AuthButton />
-          </div>
-        </nav>
-
-        <div className="flex-1 w-full flex justify-center">
-          <div className="w-full flex">
-            {/* Left sidebar / menu */}
-            <aside className="hidden md:block w-64 shrink-0 bg-background/50 p-4 static" aria-label="Primary sidebar">
-              <nav className="flex flex-col gap-2" aria-label="Main menu">
-                <a href="#" className="text-sm font-medium px-2 py-2 rounded hover:bg-foreground/5">Dashboard</a>
-                <a href="#" className="text-sm font-medium px-2 py-2 rounded hover:bg-foreground/5">Projects</a>
-                <a href="#" className="text-sm font-medium px-2 py-2 rounded hover:bg-foreground/5">Services</a>
-                <a href="#" className="text-sm font-medium px-2 py-2 rounded hover:bg-foreground/5">Contact</a>
-              </nav>
-            </aside>
-
-            <main className="flex flex-col mx-14 gap-6 px-4 w-full mt-10 ">
-              <div>
-                <Image
-                  className="rounded-full border float-right display-block"
-                  src="/images/headshot.png" // Path to your image
-                  alt="Headshot" // Essential for accessibility and SEO
-                  width={200} // Desired width
-                  height={200} // Desired height
-                />
-                <h1 className="text-xl font-bold">Welcome to JMB Software Solutions</h1>
-                <p className="text-lg text-muted-foreground">
-                  Your trusted partner for custom software development and IT solutions.
-
-                </p>
-
-              </div>
-
-
-            </main>
-          </div>
+      <h1 className="text-7xl">James Bales</h1>
+      <p className="mt-4 text-2xl  text-muted-foreground">
+        Software Engineer | Full Stack Developer
+      </p>
+      <p className="mt-2 text-xl">Reliable software solutions</p>
+      <p className="mt-2 text-xl">20 Years of Experience</p>
+      <p className="mt-2 text-xl">Dependable Results</p>
+      <h1 className="text-2xl mt-10 font-semibold">Skills & Technologies</h1>
+      <div className="grid grid-flow-col grid-rows-[100px_1fr] mt-6 gap-60 content-around">
+        <div>
+          <h1 className="text-xl font-semibold">Languages</h1>
+          <ul className="list-inside mt-2 list-none">
+            <li>JavaScript / TypeScript</li>
+            <li>Python</li>
+            <li>C#</li>
+            <li>C/C++</li>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>HTML & CSS</li>
+            <li>SQL</li>
+          </ul>
         </div>
-
-        <footer className="w-full flex items-center justify-center border-t mx-auto text-center text-xs gap-8 py-16">
-
-
-        </footer>
+        <div>
+          <h1 className="text-xl font-semibold">Frameworks</h1>
+          <ul className="list-inside mt-2 list-none">
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Nest.js</li>
+            <li>JQuery</li>
+            <li>Django</li>
+            <li>.NET Framework/.NET 5+</li>
+            <li>ASP.NET</li>
+            <li>Entity Framwork</li>
+          </ul>
+        </div>
+        <div>
+          <h1 className="text-xl font-semibold">Databases</h1>
+          <ul className="list-inside mt-2 list-none">
+            <li>MySQL</li>
+            <li>SQL Server</li>
+            <li>Oracle</li>
+            <li>Postgres</li>
+          </ul>
+        </div>
+        <div>
+          <h1 className="text-xl font-semibold">Hosting</h1>
+          <ul className="list-inside mt-2 list-none ">
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Openshift</li>
+            <li>IIS</li>
+            <li>Weblogic</li>
+            <li>Apache</li>
+            <li>Apache Tomcat</li>
+            <li>Nginx</li>
+          </ul>
+        </div>
+        <div>
+          <h1 className="text-xl font-semibold">Architectures</h1>
+          <ul className="list-inside mt-2 list-none ">
+            <li>Microservices</li>
+            <li>Serverless</li>
+            <li>Monolithic</li>
+            <li>REST APIs</li>
+            <li>SOAP Web Serivces</li>
+            <li>Integrations</li>
+            <li>Single Page Applications</li>
+            <li>Model-View-Controller</li>
+          </ul>
+        </div>
+        <div>
+          <h1 className="text-xl font-semibold">Cloud</h1>
+          <ul className="list-inside mt-2 list-none ">
+            <li>Amazon Web Services</li>
+            <li>Azure</li>
+          </ul>
+        </div>
       </div>
     </main>
   );
