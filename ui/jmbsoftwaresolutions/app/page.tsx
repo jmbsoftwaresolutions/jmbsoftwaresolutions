@@ -4,7 +4,7 @@ import { LinkedInLogoIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 export default function Home() {
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center p-4 mt-10 mb-14">
+      <main className="flex min-h-screen flex-col items-center p-4 mt-10 mb-20">
         <Image
           className="rounded-full block mx-auto"
           src="/images/headshot.png"
