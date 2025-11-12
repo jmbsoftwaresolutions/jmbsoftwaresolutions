@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { LinkedInLogoIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 export default function Home() {
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center p-4 mt-10">
+      <main className="flex min-h-screen flex-col items-center p-4 mt-10 mb-14">
         <Image
           className="rounded-full block mx-auto"
           src="/images/headshot.png"
@@ -131,7 +132,22 @@ export default function Home() {
           </Card>
         </div>
       </main>
-      <footer></footer>
+      <footer className="w-full flex items-center justify-center gap-8 py-5 border-t-2 fixed bottom-0 bg-gray-100">
+        <a href="https://www.linkedin.com/in/james-bales-827a558/">
+          <LinkedInLogoIcon
+            className="text-muted-foreground"
+            width={30}
+            height={30}
+          />
+        </a>
+        <a href="https://github.com/jmbsoftwaresolutions">
+          <GitHubLogoIcon
+            className="text-muted-foreground"
+            width={30}
+            height={30}
+          />
+        </a>
+      </footer>
     </>
   );
 }
